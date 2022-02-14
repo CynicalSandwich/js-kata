@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --watchAll",
-    "unit:silent": "jest --reporters jest-silent-reporter --collectCoverage=false"
+    "unit:silent": "jest --reporters jest-silent-reporter --collectCoverage=false",
+    "lint": "eslint . --ext .js,"
   },
   "keywords": [],
   "author": "",
@@ -14,9 +15,11 @@
     "@babel/cli": "^7.16.8",
     "@babel/core": "^7.16.12",
     "@babel/preset-env": "^7.16.11",
+    "eslint": "^8.9.0",
     "jest": "^27.4.7"
   },
   "dependencies": {
+    "eslint-plugin-jest": "^26.1.0",
     "jest-silent-reporter": "^0.5.0"
   }
 }
